@@ -19,9 +19,19 @@ from django.conf.urls.static import static
 from django.conf import settings
 from bigs_cars import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('index/', views.index, name='index'),
+
+    # Auth
+    path('signup/', views.signupuser, name='signupuser'),
+    path('login/', views.loginuser, name='loginuser'),
+    path('logout/', views.logoutuser, name='logoutuser'),
+
+    # BigsCars
+    path('', views.home, name='home'),
+    path('current/', views.currentautos, name='currentautos'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

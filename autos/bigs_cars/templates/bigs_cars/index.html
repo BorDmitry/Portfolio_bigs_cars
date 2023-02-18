@@ -2,7 +2,20 @@
 {% load static %}
 {%  block content %}
 
-<h1> Большие дороги для Больших машин</h1>
+ <div class="menu">
+    <div class="wrap">
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'bigs_cars/logo.png' %}" alt="">
+            </a>
+        </div>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% static 'bigs_cars/resume.pdf' %}" target="_blank">Резюме</a></li>
+        </ul>
+    </div>
+</div>
+<h1 id="title">Большие дороги для Больших машин</h1>
 
 <div class="img">
     <img src="{% static 'bigs_cars/monster.jpg' %}" alt="">

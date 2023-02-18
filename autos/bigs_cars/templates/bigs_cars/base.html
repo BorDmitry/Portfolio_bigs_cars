@@ -4,28 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'bigs_cars/favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <div class="menu">
-        <div class="wrap">
-            <div class="logo">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'bigs_cars/logo.png' %}" alt="">
-                </a>
-            </div>
-            <ul>
-                <li><a href="{% url 'index' %}">Главная</a></li>
-                <li><a href="{% static 'bigs_cars/resume.pdf' %}" target="_blank">Резюме</a></li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="content">
-        <div class="wrap">
-            {% block content %}
-            {% endblock %}
-        </div>
+{%  if user.is_authenticated %}
+<div class="menu_1">
+    <div class="wrap_1">
+        <ul>
+            <li class="logo"><a href="">Пользователь: {{ user.username }}</a></li>
+            <li><a href="{% url 'currentautos' %}">Актуальные</a></li>
+            <li>
+                <form action="{% url 'logoutuser' %}" method="post">
+                    {% csrf_token %}
+                    <button class="top">Выйти</button>
+                </form>
+            </li>
+        </ul>
     </div>
+</div>
+{% else %}
+<div class="menu_1">
+    <div class="wrap_1">
+        <ul>
+            <li><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
+            <li><a href="{% url 'loginuser' %}">Войти</a></li>
+        </ul>
+    </div>
+</div>
+{%  endif %}
+
+<div class="content">
+    <div class="wrap">
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
 </body>
 </html>
