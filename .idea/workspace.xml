@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc3875a-7f16-4201-ab8f-7b64b26bf41a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/favicon (1).ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/loginuser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/signupuser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/maxresdefault.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/cars.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ten.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ten.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autos/autos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/autos/autos/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autos/autos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/autos/autos/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/pajero sport.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/favicon (1).ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/bigs_cars/static/bigs_cars/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/autos/bigs_cars/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/autos/bigs_cars/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/autos/bigs_cars/templates/bigs_cars/index.html" afterDir="false" />
@@ -42,15 +42,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dmitry/BigsCars_django/ten/autos/bigs_cars/static/bigs_cars&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Dmitry/BigsCars_django/ten/autos/bigs_cars/static/bigs_cars",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dmitry\BigsCars_django\ten\autos\bigs_cars\static\bigs_cars" />
@@ -75,11 +75,19 @@
       <option name="project" value="LOCAL" />
       <updated>1676609899722</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dz_12_02_23_portfolio_BigsCars_Autorization">
+      <created>1676764788688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676764788688</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dz_11_02_23_portfolio_BigsCars" />
-    <option name="LAST_COMMIT_MESSAGE" value="dz_11_02_23_portfolio_BigsCars" />
+    <MESSAGE value="dz_12_02_23_portfolio_BigsCars_Autorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="dz_12_02_23_portfolio_BigsCars_Autorization" />
   </component>
 </project>

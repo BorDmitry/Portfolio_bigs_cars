@@ -22,7 +22,8 @@ from bigs_cars import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name='index'),
+    path('', views.index, name='index'),
+    path('cars/', views.cars, name='cars'),
 
     # Auth
     path('signup/', views.signupuser, name='signupuser'),
@@ -30,7 +31,7 @@ urlpatterns = [
     path('logout/', views.logoutuser, name='logoutuser'),
 
     # BigsCars
-    path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
     path('current/', views.currentautos, name='currentautos'),
 ]
 

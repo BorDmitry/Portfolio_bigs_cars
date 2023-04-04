@@ -2,7 +2,7 @@
 {% load static %}
 {%  block content %}
 
- <div class="menu">
+<div class="menu">
     <div class="wrap">
         <div class="logo">
             <a href="{% url 'index' %}">
@@ -19,16 +19,20 @@
         </ul>
     </div>
 </div>
-<h1 id="title">Большие дороги для Больших машин</h1>
+<h2>Каталог внедорожников</h2>
 
-<div class="img">
-    <img src="{% static 'bigs_cars/maxresdefault.jpg' %}" alt="">
+<div class="block">
+    {% for project in projects %}
+    <div class="element">
+        <div>
+        <img src="{{ project.image.url }}" alt="">
+        </div>
+        <div class="text">
+            <h2><a href="{{ project.url }}" class="h" target="_blank">{{ project.title}}</a></h2>
+            <p>{{ project.description}}</p>
+        </div>
+    </div>
+    {% endfor %}
 </div>
-<ul>
-    <li><a href="https://yandex.ru/video/preview/2013323291148266231">Тест драйв FORD F-350</a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-</ul>
+
 {%  endblock %}

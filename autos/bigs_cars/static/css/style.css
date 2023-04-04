@@ -29,21 +29,14 @@ body{
     width: 800px;
     padding: 20px;
     box-sizing: border-box;
-} 
+}
 .block img{
     max-width: 800px;
 }
-.content h1 .content h2{
+.content h1{
     text-align: center;
     margin: 60px 40px 40px;
-}
-#title{
-    font-size: 60px;    
-} 
-
-
-.center h1 .centerh2{
-    font-size: 1rem;
+    font-size: 60px;
 }
 .img + h2, .text h2{
     text-align: center;
@@ -57,52 +50,37 @@ body{
 .img img{
     border: 10px solid #FFF;
 }
-.wrap_1{
-    margin: 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.menu_1{
-    max-width: 1700px;
-    background: #003366;
-    box-shadow: 0 2px 12px 2px #003366;
-}
-.menu_1 .wrap_1 ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 30px;
+.menu{
+    background: #cdf5f1;
+    padding: 10px;
+    border-bottom: 10px solid #FFF;
 }
 .menu .wrap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;   
-}
-
-.menu_1 .logo{
-    color: #FFF;
-}
-.menu_1 a{
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-.menu_1 ul{
-    display: flex;
-    list-style: none;
-}
-.menu li{
-    margin-left: 40px;
-    
+    align-items: center;
 }
 .menu ul{
     display: flex;
     list-style: none;
     font-size: 20px;
-    
+}
+.menu li{
+    margin-left: 40px;
 }
 .menu a{
+    color: #663366;
+    font-weight: bold;
     text-decoration: none;
-}    
+}
+.logo{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -14,7 +15,7 @@
     <div class="wrap_1">
         <ul>
             <li class="logo"><a href="">Пользователь: {{ user.username }}</a></li>
-            <li><a href="{% url 'currentautos' %}">Актуальные</a></li>
+
             <li>
                 <form action="{% url 'logoutuser' %}" method="post">
                     {% csrf_token %}
@@ -28,7 +29,7 @@
 <div class="menu_1">
     <div class="wrap_1">
         <ul>
-            <li><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
+            <li class="logo"><a href="{% url 'signupuser' %}">Зарегистрироваться</a></li>
             <li><a href="{% url 'loginuser' %}">Войти</a></li>
         </ul>
     </div>

@@ -11,8 +11,12 @@ def home(request):
 
 
 def index(request):
+    return render(request, 'bigs_cars/index.html')
+
+
+def cars(request):
     projects = BigsCars.objects.all()
-    return render(request, 'bigs_cars/index.html', {'projects': projects})
+    return render(request, 'bigs_cars/cars.html', {'projects': projects})
 
 
 def signupuser(request):
